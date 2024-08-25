@@ -30,10 +30,11 @@ export async function getStaticProps(context){
     return {notFound:true};
   }
 
+
   return{props:{
           products:data.products
        },
-       revalidate:10
+       revalidate:10,
   };
 }
 
